@@ -4,6 +4,7 @@ dotenv.config();
 import express from 'express';
 import cors from 'cors'
 import mongoose from 'mongoose';
+import userRouter from "./routes/userRoute.js";
 
 
 const PORT = process.env.PORT || 5000;
@@ -20,6 +21,8 @@ app.use(cors())
 app.get('/',(req, res) => {
     res.json({message: "server or api is working"})
 })
+
+app.use("/api/user", userRouter)
 
 app.listen(PORT, ()=> {
     console.log("server listing on port "+PORT) 

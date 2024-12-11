@@ -18,10 +18,10 @@
     "express": "^4.21.1",
     "form-data": "^4.0.1",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.8.3",
+    "mongoose": "^8.8.4",
     "multer": "^1.4.5-lts.1",
     "nodemon": "^3.1.7",
     "razorpay": "^2.9.5",
-    "svix": "^1.43.0"
+    "svix": "^1.21.1-next-5311b6b775024b9206e4a1a12982692b4f1a1d07.0"
   }
 }
