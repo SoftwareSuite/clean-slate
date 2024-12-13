@@ -5,6 +5,7 @@ import express from 'express';
 import cors from 'cors'
 import mongoose from 'mongoose';
 import userRouter from "./routes/userRoute.js";
+import imageRouter from "./routes/imageRoute.js";
 
 
 const PORT = process.env.PORT || 5000;
@@ -23,6 +24,8 @@ app.get('/',(req, res) => {
 })
 
 app.use("/api/user", userRouter)
+app.use("/api/image", imageRouter)
+
 
 app.listen(PORT, ()=> {
     console.log("server listing on port "+PORT) 
